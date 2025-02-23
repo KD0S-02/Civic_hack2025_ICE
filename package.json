@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +15,9 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5"
   }
 }

@@ -1,8 +1,8 @@
-import { request, response } from "express";
 const supabase = require('../models/database')
 
-const addReport = async(req: request, res: response) => {
-    const body: REPORT = req.body;
+const addReport = async(req:any, res:any) => {
+    const body = req.body;
+    console.log(body);
     
     if (!body) return res.status(400).json("Message: No Body");
 
